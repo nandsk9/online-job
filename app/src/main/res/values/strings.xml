@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Online Job</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="msg_toc">By processing you also agree to the Terms of Service and Privacy Policy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_num">Verify Your Number</string>
+    <string name="enter_mob_num_desc">Please enter your mobile number to receive one time password</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="verify_code">Verification Code</string>
+    <string name="enter_veri_code_desc">OTP has been send to your mobile number. Please verify</string>
+    <string name="hint_enter_otp">Enter OTP</string>
+    <string name="verify">Verify</string>
+    <string name="processing">Processing . .</string>
+    <string name="resend_otp">Resend OTP in 60s</string>
+    <string name="resend_otp_button">Resend OTP</string>
+    <string name="service_type">Service Type</string>
+
+    <string name="acc_bal">Account Bal</string>
+    <string name="ui_ux_designer">UI/UX Designer</string>
+    <string name="my_desc">enne kond pattunna ella mesthiripanium njan cheyyum thep varp paint ellam panik vilicholu sasii mesthirium teamum ready anhnn.</string>
+    <string name="about_me">About Me</string>
+    <string name="contact">Contact</string>
+    <string name="payment">Payment</string>
+    <string name="skills">Skills</string>
+    <string name="ratings">Star Ratings</string>
+    <string name="job_active">Active Job</string>
+    <string name="job_accepted">Job Accepted</string>
+    <string name="finished">Finished</string>
+    <string name="retry">Retry</string>
+    <string name="categories">Categories</string>
+    <string name="skilled">Skilled</string>
+    <string name="semi_skilled">Semi Skilled</string>
+    <string name="unskilled">Un Skilled</string>
+
+    <string-array name="job_type">
+        <item>Skilled</item>
+        <item>Semi Skilled</item>
+        <item>Unskilled</item>
+    </string-array>
+
+    <string-array name="job_catagories_skilled">
+        <item>Skilled</item>
+        <item>Carpenter</item>
+        <item>Dance Teacher</item>
+        <item>Driver</item>
+        <item>Electrician</item>
+        <item>Grass cutting with machine</item>
+        <item>Home Tuition - High School</item>
+        <item>Home Tuition (HS-CBSE)</item>
+        <item>Mansion</item>
+        <item>Motor Mechanic</item>
+        <item>Plumber</item>
+        <item>Teaching (Others-Higher levels)</item>
+        <item>Tile Fixing</item>
+        <item>TV Technician</item>
+        <item>Welder</item>
+    </string-array>
+
+    <string-array name="job_catagories_semiskilled">
+        <item>Semi Skilled</item>
+        <item>Account/Clerk</item>
+        <item>Agriculture</item>
+        <item>Drawing Teacher</item>
+        <item>Home Tuition-Primary</item>
+        <item>Home Tuition (UP-CBSE)</item>
+        <item>Home Tuition-Upper Primary</item>
+        <item>Music Teacher</item>
+        <item>Painter</item>
+        <item>Receptionist</item>
+        <item>Salesperson</item>
+        <item>Sports Coach</item>
+        <item>Telecaller</item>
+        <item>Tyre Mechanic</item>
+        <item>Yoga Teacher</item>
+    </string-array>
+
+    <string-array name="job_catagories_unskilled">
+        <item>Unskilled</item>
+        <item>Cooking/helper (Non-Veg)</item>
+        <item>Cooking/helper (Veg)</item>
+        <item>Helper(construction)</item>
+        <item>Helper(general)</item>
+        <item>Hotel and functions table cleaning</item>
+        <item>Hotel Kitchen helper</item>
+        <item>Indoor cleaning</item>
+        <item>Lifting/moving/packing</item>
+        <item>Parking attendants</item>
+        <item>Serving food at functions</item>
+        <item>Sales helper</item>
+    </string-array>
+
+
+    <string-array name="job_qualification">
+        <item>Below 10th</item>
+        <item>10th</item>
+        <item>+2</item>
+        <item>Above +2</item>
+    </string-array>
+
+</resources>

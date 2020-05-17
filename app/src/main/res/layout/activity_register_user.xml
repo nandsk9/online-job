@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".auth.RegisterUserActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/blue"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online Job"
+        android:textColor="#2CA7E0"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/et_reg_username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColorHint="#2CA7E0" />
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColorHint="#2CA7E0" />
+    <TextView
+        android:id="@+id/tv_reg_type"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/service_type"
+        android:textColorHint="#2CA7E0"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <!--EditText
+        android:id="@+id/et_reg_pass1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:textColorHint="#2CA7E0"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit"
+        android:padding="20dp"
+        />
+    <EditText
+        android:id="@+id/et_reg_pass2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textColorHint="#2CA7E0"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit"
+        android:padding="20dp"
+        /-->
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:id="@+id/btn_register_user"
+        />
+
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

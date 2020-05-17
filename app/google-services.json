@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "117507222624",
+    "firebase_url": "https://online-job-68d74.firebaseio.com",
+    "project_id": "online-job-68d74",
+    "storage_bucket": "online-job-68d74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117507222624:android:8c4bc523998395d831e705",
+        "android_client_info": {
+          "package_name": "com.bot.onlinejob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117507222624-eaoipmdqadus00ibtu4np9blmo5ksude.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bot.onlinejob",
+            "certificate_hash": "12b20326b12e492fb1a70f17eef89af91d488566"
+          }
+        },
+        {
+          "client_id": "117507222624-89dlsh1puj5shm5cbssncvn9hoh08kbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bot.onlinejob",
+            "certificate_hash": "3531612c7c4607379fb3fe0cd9e7d5de1ab26f67"
+          }
+        },
+        {
+          "client_id": "117507222624-agf9rd6mvau31d9f76rkmpqm7rllhu5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bot.onlinejob",
+            "certificate_hash": "e29315bfb5761839da7708c1d8b27509817f1d27"
+          }
+        },
+        {
+          "client_id": "117507222624-73jmbs1kfjt76lt12caotdc7808fksqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEcX3-PfWGRyAE0E1m95-NDNIMw3RY8Fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117507222624-73jmbs1kfjt76lt12caotdc7808fksqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

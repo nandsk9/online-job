@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.EnterMobileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_view_enter_mob_login"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/enter_mob_num"
+                android:layout_marginTop="60dp" />
+            <TextView
+                android:id="@+id/tv_enter_mob_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/verify_num"
+                android:textSize="28sp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-black"
+                android:layout_below="@id/image_view_enter_mob_login"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_enter_mob_num_desc"
+                android:text="@string/enter_mob_num_desc"
+                android:layout_below="@id/tv_enter_mob_num"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/login_enter_mob"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enter your mobile number"
+                android:maxLength="10"
+                android:textColorHint="#2CA7E0"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/edit"
+                android:padding="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_enter_mob_num_desc"
+                />
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:text="@string/send_otp"
+                android:textColor="#fff"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button"
+                android:id="@+id/button_send_otp"
+                android:layout_below="@id/login_enter_mob"
+                android:layout_centerHorizontal="true"
+
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

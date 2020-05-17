@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seeker.FragmentSeekerHome">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FBFBFB">
+            <!--Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|right"
+                    tools:ignore="RtlHardcoded">
+
+
+                        <EditText
+                            android:id="@+id/search_job"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edit"
+                            android:ems="10"
+                            android:hint="Find your job"
+                            android:drawableRight="@drawable/ic_search_black_24dp"
+                            android:gravity="center" >
+                        </EditText>
+                    </LinearLayout>
+            </Toolbar-->
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/SliderDots"
+                android:layout_below="@+id/viewPager"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/viewPager"
+                        android:id="@+id/linear_layout_new_works"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="New Works"
+                            android:textSize="@dimen/text_size_18_sp"
+                            android:fontFamily="@font/ralewaybold"
+                            android:layout_marginTop="10dp"
+                            />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/provider_show_all_new_jobs_recycler_view"
+                        android:layout_below="@id/linear_layout_new_works"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/provider_tv_home_categories"
+                       android:text="@string/categories"
+                       android:textSize="@dimen/text_size_18_sp"
+                       android:fontFamily="@font/ralewaybold"
+                       android:layout_marginTop="10dp"
+                       android:layout_below="@id/provider_show_all_new_jobs_recycler_view"/>
+
+                             <!--categories-->
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_below="@id/provider_tv_home_categories"
+                            android:id="@+id/horizontal_scroll_view"
+                            android:background="#FBFBFB"
+                            android:scrollbars="none">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/provider_home_skilled_card"
+                                android:layout_width="280dp"
+                                android:layout_height="240dp"
+                                android:layout_margin="@dimen/small"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="3dp"
+                                app:cardElevation="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:paddingTop="@dimen/medium">
+
+                                    <ImageView
+                                        android:layout_width="180dp"
+                                        android:layout_height="140dp"
+                                        android:layout_marginLeft="@dimen/small"
+                                        android:layout_marginRight="@dimen/small"
+                                        android:padding="10dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/engagedemployee" />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.7dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="#C0C0C0" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/medium"
+                                        android:layout_marginRight="@dimen/medium"
+                                        android:fontFamily="@font/ralewaybold"
+                                        android:gravity="left"
+                                        android:paddingTop="@dimen/small"
+                                        android:paddingBottom="@dimen/medium"
+                                        android:text="@string/skilled"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="280dp"
+                                    android:layout_height="240dp"
+                                    android:id="@+id/provider_home_semi_skilled_card"
+                                    android:layout_margin="@dimen/small"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardCornerRadius="3dp"
+                                    app:cardElevation="2dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingTop="@dimen/medium">
+
+                                        <ImageView
+                                            android:layout_width="180dp"
+                                            android:layout_height="140dp"
+                                            android:layout_marginLeft="@dimen/small"
+                                            android:layout_marginRight="@dimen/small"
+                                            android:padding="10dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/engagedemployee" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0.7dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="#C0C0C0" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/medium"
+                                            android:layout_marginRight="@dimen/medium"
+                                            android:fontFamily="@font/ralewaybold"
+                                            android:gravity="left"
+                                            android:paddingTop="@dimen/small"
+                                            android:paddingBottom="@dimen/medium"
+                                            android:text="@string/semi_skilled"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="280dp"
+                                    android:layout_height="240dp"
+                                    android:id="@+id/provider_home_un_skilled_card"
+                                    android:layout_margin="@dimen/small"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardCornerRadius="3dp"
+                                    app:cardElevation="2dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingTop="@dimen/medium">
+
+                                        <ImageView
+                                            android:layout_width="180dp"
+                                            android:layout_height="140dp"
+                                            android:layout_marginLeft="@dimen/small"
+                                            android:layout_marginRight="@dimen/small"
+                                            android:padding="10dp"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/engagedemployee" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0.7dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="#C0C0C0" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/medium"
+                                            android:layout_marginRight="@dimen/medium"
+                                            android:fontFamily="@font/ralewaybold"
+                                            android:gravity="left"
+                                            android:paddingTop="@dimen/small"
+                                            android:paddingBottom="@dimen/medium"
+                                            android:text="@string/unskilled"
+                                            android:textSize="18sp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
